@@ -1,0 +1,13 @@
+language: java
+
+jdk:
+  - openjdk6
+  - openjdk7
+  - oraclejdk7
+
+install:
+  - mkdir /tmp/dynamodb
+  - wget -O - http://dynamodb-local.s3-website-us-west-2.amazonaws.com/dynamodb_local_latest | tar xz --directory /tmp/dynamodb
+
+before_script:
+  - mv /tmp/dynamodb/* /tmp/dynamodb/dynamodb && cd /tmp/dynamodb/dynamodb && java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -inMemory

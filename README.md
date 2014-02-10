@@ -1,12 +1,17 @@
 DynamoDB River Plugin for Elasticsearch
 ==================================
 
+[![Build Status](https://travis-ci.org/kzwang/elasticsearch-river-dynamodb.png?branch=master)](https://travis-ci.org/kzwang/elasticsearch-river-dynamodb)
+
 The DynamoDB River plugin allows to fetch data from [DynamoDB](http://aws.amazon.com/dynamodb/) and indexing into Elasticsearch
+
+In order to install the plugin, simply run: `bin/plugin -install com.github.kzwang/elasticsearch-river-dynamodb/1.0.0.RC1`.
 
 
 |       DynamoDB Plugin       |    elasticsearch    | Release date |
 |-----------------------------|---------------------|:------------:|
 | 1.0.0-SNAPSHOT (master)     | 1.0.0.RC2           |              |
+| 1.0.0.RC1                   | 1.0.0.RC2           | 2014-02-10   |
 
 
 ## Create River
